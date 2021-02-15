@@ -29,7 +29,7 @@
             case 'remainder':
                 return first_num % second_num;
             default:
-                throw Error('Unknown command');
+                throw new Error(`Unknown command: ${command}`);
         }
     }
 
