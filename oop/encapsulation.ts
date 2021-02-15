@@ -33,7 +33,7 @@
                 hasMilk: false
             };
         }
-    };
+    }
 
     // const maker1 = new CoffeeMachine(35);
     // const maker2 = new CoffeeMachine(28);

@@ -65,7 +65,7 @@
             this.preHeat();
             return this.extract(shots);
         }
-    };
+    }
 
     // const maker3: CoffeeMachine = CoffeeMachine.makeMachine(14);
     // console.log(maker3);
