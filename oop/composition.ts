@@ -62,6 +62,12 @@
         }
     }
 
+    class NoMilk implements MilkFrother {
+        makeMilk(cup: CoffeeCup): CoffeeCup {
+            return cup;
+        }
+    }
+
     class CandySugarMixer implements SugarProvider {
         private getSugar(): boolean {
             console.log('Getting some sugart from Candy 🍭');
@@ -92,20 +98,23 @@
         }
     }
 
+    class NoSugar implements SugarProvider {
+        addSugar(cup: CoffeeCup): CoffeeCup {
+            return cup;
+        }
+    }
+
     // access modifier protected: Child class can access it.
     class CoffeeMachine implements CoffeeMaker {
         private beans: number = 0;
         private static readonly BEANS_GRAM_PER_SHOT = 7;
         
-        // protected constructor(beans: number) {
-        //     this.beans = beans;
-        // }
-        public constructor(beans: number) {
+        public constructor(
+            beans: number,
+            private milk: MilkFrother,
+            private sugar: SugarProvider
+        ) {
             this.beans = beans;
-        }
-
-        public static makeMachine(beans: number): CoffeeMachine {
-            return new CoffeeMachine(beans);
         }
 
         public clean() {
@@ -145,72 +154,30 @@
         public makeCoffee(shots: number): CoffeeCup {
             this.grindBeans(shots);
             this.preHeat();
-            return this.extract(shots);
-        }
-    }
-
-    class CaffeLatteMachine extends CoffeeMachine {
-        
-        constructor(
-            beans: number,
-            public readonly serialNumber: string,
-            private milkFrother: MilkFrother
-        ) {
-            super(beans);
-        }
-
-        makeCoffee(shots: number): CoffeeCup {
-            const coffee = super.makeCoffee(shots);
-            return this.milkFrother.makeMilk(coffee);
-        }
-    }
-
-    class SweetCoffeeMachine extends CoffeeMachine {
-        constructor(
-            beans: number,
-            public readonly serialNumber: string,
-            private sugar: SugarProvider) {           
-            super(beans);
-        }
-        makeCoffee(shots: number): CoffeeCup {
-            const coffee = super.makeCoffee(shots);
-            return this.sugar.addSugar(coffee);
-        }
-    }
-
-    class SweetCaffeLatteMachine extends CoffeeMachine {
-        constructor(
-            beans: number,
-            private milk: MilkFrother,
-            private sugar: SugarProvider
-        ) {
-            super(beans);
-        }
-
-        makeCoffee(shots: number): CoffeeCup {
-            const coffee = super.makeCoffee(shots);
+            const coffee = this.extract(shots);
             const sugarAdded = this.sugar.addSugar(coffee);
             return this.milk.makeMilk(sugarAdded);
         }
-
     }
 
     // Milk
     const cheapMilkMaker = new CheapMilkSteamer();
     const fancyMilkMaker = new FancyMilkSteamer();
     const coldMilkMaker = new ColdMilkSteamer();
+    const noMilk = new NoMilk();
     // Sugar
     const candaySugar = new CandySugarMixer();
     const sugar = new SugarMixer();
+    const noSugar = new NoSugar();
 
     //
-    const sweetCandyMachine = new SweetCoffeeMachine(21, 's23', candaySugar);
-    const sweetMachine = new SweetCoffeeMachine(21, 's24', sugar);
+    const sweetCandyMachine = new CoffeeMachine(21, noMilk, candaySugar);
+    const sweetMachine = new CoffeeMachine(21, noMilk, sugar);
     //
-    const latteMachine = new CaffeLatteMachine(28, 'l31', cheapMilkMaker);
-    const fancyLatteMachine = new CaffeLatteMachine(28, 'l32', fancyMilkMaker);
-    const coldLatteMachine = new CaffeLatteMachine(28, 'l33', coldMilkMaker);
+    const latteMachine = new CoffeeMachine(28, cheapMilkMaker, noSugar);
+    const fancyLatteMachine = new CoffeeMachine(28, fancyMilkMaker, noSugar);
+    const coldLatteMachine = new CoffeeMachine(28, coldMilkMaker, noSugar);
 
 
-    const sweetLatteMachine = new SweetCaffeLatteMachine(35, cheapMilkMaker, candaySugar);
+    const sweetLatteMachine = new CoffeeMachine(35, cheapMilkMaker, candaySugar);
 }
