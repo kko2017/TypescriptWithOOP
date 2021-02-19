@@ -1,0 +1,62 @@
+:root {
+    --color-white: #ffffff;
+    --color-deep-grey: #414449;
+    --color-grey: #424142;
+    --color-red: #e43620;
+}
+
+body {
+    background-image: url('../imgs/cool-background.png');
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    background-color: var(--color-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    width: 100vh;
+}
+
+.header  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: var(--color-red);
+}
+
+.btn {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    outline: none;
+}
+
+.items {
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    align-items:flex-start;
+    margin: 12px 0  12px 0;
+}
+
+.item__youtube{
+    width: 450px; 
+    height: 280px;
+}
+
+.item__text {
+    width: 360px;
+    height: 280px;
+    background: linear-gradient(to right, var(--color-grey), var(--color-deep-grey));
+}
