@@ -1,12 +1,21 @@
 :root {
+    /* color */
     --color-white: #ffffff;
     --color-deep-grey: #414449;
     --color-grey: #424142;
     --color-red: #e43620;
+
+    /* size */
+    --youtube-width: 450px;
+    --text-width: 360px;
+    --item-height: 280px;
+
+    /* animation */
+    --animation-duration: 300ms;
 }
 
 body {
-    background-image: url('../imgs/cool-background.png');
+    background-image: url('../assets/cool-background.png');
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -38,6 +47,12 @@ body {
     color: var(--color-white);
     border: none;
     outline: none;
+    cursor: pointer;
+    transition: transform var(--animation-duration) ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
 }
 
 .items {
@@ -51,12 +66,12 @@ body {
 }
 
 .item__youtube{
-    width: 450px; 
-    height: 280px;
+    width: var(--youtube-width); 
+    height: var(--item-height);
 }
 
 .item__text {
-    width: 360px;
-    height: 280px;
+    width: var(--text-width);
+    height: var(--item-height);
     background: linear-gradient(to right, var(--color-grey), var(--color-deep-grey));
 }
