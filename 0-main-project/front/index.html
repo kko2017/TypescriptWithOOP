@@ -6,52 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Motion!!!</title>
     <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <script type="module" src="./dist/app.js" defer></script>
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            <h2 class="title">Motion</h2>
-            <section class="buttons">
-                <button class="btn">Image</button>
-                <button class="btn">Video</button>
-                <button class="btn">Note</button>
-                <button class="btn">Task</button>
-            </section>
-        </div>
-        <section class="contents">
-            <ul class="items">
-                <li class="item">
-                    <iframe  
-                        src="https://www.youtube.com/embed/6k7a8bw451M" 
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                        class="item__youtube">
-                    </iframe>
-                    <div class="item__text">
-                        Hello~!!
-                    </div>
+    <div class="app">
+        <header class="banner">
+            <h1 class="banner__title">Motion</h1>
+            <ul class="contorl-panel">
+                <li>
+                    <button id="new-image" class="create-button">Image</button>
                 </li>
-                <li class="item">
-                    <iframe src="https://www.youtube.com/embed/6k7a8bw451M" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        class="item__youtube">
-                    </iframe>
-                    <div class="item__text">
-                        Hello~!!
-                    </div>
-                </li><li class="item">
-                    <iframe src="https://www.youtube.com/embed/6k7a8bw451M" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                        class="item__youtube">
-                    </iframe>
-                    <div class="item__text">
-                        Hello~!!
-                    </div>
+                <li>
+                    <button id="new-video" class="create-button">Video</button>
+                </li>
+                <li>
+                    <button id="new-note" class="create-button">Note</button>
+                </li>
+                <li>
+                    <button id="new-todo" class="create-button">Todo</button>
                 </li>
             </ul>
-        </section>
-        <footer>
+        </header>
+        <main class="document"></main>
+        <footer class="footer">
             <p>&copy;Copyright by FifthOh. All right reserved</p>
         </footer>
     </div>
