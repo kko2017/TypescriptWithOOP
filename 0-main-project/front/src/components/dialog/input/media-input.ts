@@ -1,7 +1,8 @@
+import { MediaData } from './../dialog.js';
 import { BaseComponent } from './../../component.js';
 
 
-export class MediaInputSection extends BaseComponent<HTMLDivElement> {
+export class MediaSectionInput extends BaseComponent<HTMLDivElement> implements MediaData {
     constructor() {
         super(`<div>
                 <div class="form__container">
