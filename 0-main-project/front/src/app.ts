@@ -24,6 +24,15 @@ class app {
         this.bindElementToDialog<TextSectionInput>('#new-todo', TextSectionInput, (input: TextSectionInput) => new TodoComponent(input.title, input.body));
 
         this.bindElementToDialog<TextSectionInput>('#new-note', TextSectionInput, (input: TextSectionInput) => new NoteComponent(input.title, input.body));
+
+        this.page.addChild(new ImageComponent('First Image', 'https://picsum.photos/500/250'));
+        this.page.addChild(new VideoComponent('First Video', 'https://www.youtube.com/watch?v=aLkcmxUSm9o'));
+        this.page.addChild(new TodoComponent('1st note', 'Note here'));
+        this.page.addChild(new VideoComponent('Second Video', 'https://www.youtube.com/watch?v=0UlOohkMZnI'));
+        this.page.addChild(new NoteComponent('1st todo', 'To-do here'));
+        this.page.addChild(new ImageComponent('Second Image', 'https://picsum.photos/500/250'));
+        this.page.addChild(new NoteComponent('2nd note', 'Note here'));
+        this.page.addChild(new TodoComponent('2nd todo', 'To-do here'));
     }
 
     private bindElementToDialog<T extends (MediaData | TextData) & Component>(
