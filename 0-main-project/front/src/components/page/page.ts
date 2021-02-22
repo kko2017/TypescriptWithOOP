@@ -5,14 +5,20 @@ export interface Composable {
 } 
 
 type OnCloseListener = () => void;
+type DragState = 'start' | 'stop' | 'enter' | 'leave';
+type OnDragStateListener<T extends Component> = (target: T, state: DragState ) => void;
 interface SectionContainer extends Component, Composable  {
     setOnCloseListener(listener: OnCloseListener): void;
+    setOnDragStateListener(listener: OnDragStateListener<SectionContainer>): void;
+    muteChildren(state: 'mute' | 'unmute'): void;
+    getBoundingRect(): DOMRect;
 }
 type SectionContainerConstructor = {
     new(): SectionContainer;
 }
 export class PageItemComponent extends BaseComponent<HTMLElement> implements SectionContainer {
-    private closeListener?: OnCloseListener;
+    private closeListener? : OnCloseListener;
+    private dragStateListener? : OnDragStateListener<PageItemComponent>;
     constructor() {
         super(`<li draggable="true" class="page-item">
                     <section class="page-item__body"></section>
@@ -30,14 +36,32 @@ export class PageItemComponent extends BaseComponent<HTMLElement> implements Sec
         this.element.addEventListener('dragend', (event: DragEvent) => {
             this.onDragEnd(event);
         });
+        this.element.addEventListener('dragenter', (event: DragEvent) => {
+            this.onDragEnter(event);
+        });
+        this.element.addEventListener('dragleave', (event: DragEvent) => {
+            this.onDragLeave(event);
+        });
     }
 
-    onDragStart(event: DragEvent): void {
-        console.log('😎 drag start', event);
+    onDragStart(_: DragEvent): void {
+        this.notifyDragObservers('start');
     }
 
-    onDragEnd(event: DragEvent): void {
-        console.log('🤣 drag end', event)
+    onDragEnd(_: DragEvent): void {
+        this.notifyDragObservers('stop');
+    }
+
+    onDragEnter(_: DragEvent): void {
+        this.notifyDragObservers('enter');
+    }
+
+    onDragLeave(_: DragEvent): void {
+        this.notifyDragObservers('leave');
+    }
+
+    notifyDragObservers(state: DragState): void {
+        this.dragStateListener && this.dragStateListener(this, state);
     }
 
     addChild(child: Component): void {
@@ -48,9 +72,29 @@ export class PageItemComponent extends BaseComponent<HTMLElement> implements Sec
     setOnCloseListener(listener: OnCloseListener): void {
         this.closeListener = listener;
     }
+
+    setOnDragStateListener(listener: OnDragStateListener<PageItemComponent>): void {
+        this.dragStateListener = listener;
+    }
+
+    muteChildren(state: 'mute' | 'unmute'): void {
+        if (state === 'mute') {
+            this.element.classList.add('mute-children');
+        } else {
+            this.element.classList.remove('mute-children');
+        }
+    }
+
+    getBoundingRect(): DOMRect {
+        return this.element.getBoundingClientRect();
+    }
 }
 
 export class PageComponent extends BaseComponent<HTMLUListElement> implements Composable{
+    private children = new Set<SectionContainer>();
+    private dragTarget?: SectionContainer;
+    private dropTarget?: SectionContainer;
+    
     constructor(private pageItemConstructor: SectionContainerConstructor) {
         super(`<ul class="page"></ul>`);
         this.element.addEventListener('dragover', (event: DragEvent) => {
@@ -63,12 +107,21 @@ export class PageComponent extends BaseComponent<HTMLUListElement> implements Co
 
     onDragOver(event: DragEvent): void {
         event.preventDefault();
-        console.log('😜 dragging over...');
     }
 
     onDrop(event: DragEvent): void {
         event.preventDefault();
         console.log('🎃 drop!!!!!');
+        // switch position
+        if (!this.dropTarget) {
+            return;
+        }
+        if (this.dragTarget && (this.dropTarget !== this.dragTarget)) {
+            const dropY = event.clientY;
+            const srcElemntY = this.dragTarget.getBoundingRect().y;
+            this.dragTarget.removeFrom(this.element);
+            this.dropTarget.attach(this.dragTarget, dropY < srcElemntY ? 'beforebegin' : 'afterend');
+        }
     }
 
     addChild(section: Component): void {
@@ -77,6 +130,37 @@ export class PageComponent extends BaseComponent<HTMLUListElement> implements Co
         item.attachTo(this.element, 'beforeend');
         item.setOnCloseListener(() => {
             item.removeFrom(this.element);
+            this.children.delete(item);
+        });
+        this.children.add(item);
+        item.setOnDragStateListener((target: SectionContainer, state: DragState) => {
+            switch (state) {
+                case 'start':
+                    this.dragTarget = target;
+                    this.updateSections('mute');
+                    break;
+                case 'stop':
+                    console.log('stop');
+                    this.dragTarget = undefined;
+                    this.updateSections('unmute');
+                    break;
+                case 'enter':
+                    this.dropTarget = target;
+                    console.log('enter', this.dropTarget);
+                    break;
+                case 'leave':
+                    this.dropTarget = undefined;
+                    console.log('leave');
+                    break;
+                default:
+                    throw new Error('mismatched state');
+            }
+        });
+    }
+    
+    private updateSections(state: 'mute' | 'unmute') {
+        this.children.forEach((section: SectionContainer) => {
+            section.muteChildren(state);
         });
     }
 }
