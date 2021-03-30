@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="552px" preserveAspectRatio="none" style="width:2540px;height:552px;background:#777777;" version="1.1" viewBox="0 0 2540 552" width="2540px" zoomAndPan="magnify"><defs><filter height="300%" id="fzmmbdy1p1vxv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[1b97d8c5c31d4d14b334a72fa81298eb]
+class Draggable--><rect codeLine="4" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="67.9102" id="Draggable" style="stroke:#1B1B1B;stroke-width:1.5;" width="215" x="7" y="20"/><ellipse cx="82" cy="33" fill="#B4A7E5" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M84.3442,37.5 L79.6606,37.5 L79.6606,36.082 L80.9712,36.082 L80.9712,30.9204 L79.6606,30.9204 L79.6606,29.5024 L84.3442,29.5024 L84.3442,30.9204 L83.0337,30.9204 L83.0337,36.082 L84.3442,36.082 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="58" x="98" y="37.3748">Draggable</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="8" x2="221" y1="46" y2="46"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="8" x2="221" y1="54" y2="54"/><ellipse cx="18" cy="65" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="192" x="24" y="68.6348">onDragStart(event: DragEvent): void</text><ellipse cx="18" cy="77.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="24" y="81.5898">onDragEnd(event: DragEvent): void</text><!--MD5=[9d31f3c488675a0efd8ef804802a25ca]
+class Hoverable--><rect codeLine="8" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="67.9102" id="Hoverable" style="stroke:#1B1B1B;stroke-width:1.5;" width="220" x="281.5" y="20"/><ellipse cx="359.5" cy="33" fill="#B4A7E5" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M361.8442,37.5 L357.1606,37.5 L357.1606,36.082 L358.4712,36.082 L358.4712,30.9204 L357.1606,30.9204 L357.1606,29.5024 L361.8442,29.5024 L361.8442,30.9204 L360.5337,30.9204 L360.5337,36.082 L361.8442,36.082 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="57" x="375.5" y="37.3748">Hoverable</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="282.5" x2="500.5" y1="46" y2="46"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="282.5" x2="500.5" y1="54" y2="54"/><ellipse cx="292.5" cy="65" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="195" x="298.5" y="68.6348">onDragEnter(event: DragEvent): void</text><ellipse cx="292.5" cy="77.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="298.5" y="81.5898">onDragLeave(event: DragEvent): void</text><!--MD5=[e13cf2458dd17983eb412f9d4c4fc3f4]
+class Droppable--><rect codeLine="12" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="67.9102" id="Droppable" style="stroke:#1B1B1B;stroke-width:1.5;" width="216" x="702.5" y="180.5"/><ellipse cx="778" cy="193.5" fill="#B4A7E5" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M780.3442,198 L775.6606,198 L775.6606,196.582 L776.9712,196.582 L776.9712,191.4204 L775.6606,191.4204 L775.6606,190.0024 L780.3442,190.0024 L780.3442,191.4204 L779.0337,191.4204 L779.0337,196.582 L780.3442,196.582 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="58" x="794" y="197.8748">Droppable</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="703.5" x2="917.5" y1="206.5" y2="206.5"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="703.5" x2="917.5" y1="214.5" y2="214.5"/><ellipse cx="713.5" cy="225.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="193" x="719.5" y="229.1348">onDragOver(event: DragEvent): void</text><ellipse cx="713.5" cy="238.4551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="719.5" y="242.0898">onDrop(event: DragEvent): void</text><!--MD5=[4e13963c9dc916a21a8436ef39422b32]
+class Component--><rect codeLine="16" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="93.8203" id="Component" style="stroke:#1B1B1B;stroke-width:1.5;" width="573" x="1163" y="7"/><ellipse cx="1413.5" cy="20" fill="#B4A7E5" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M1415.8442,24.5 L1411.1606,24.5 L1411.1606,23.082 L1412.4712,23.082 L1412.4712,17.9204 L1411.1606,17.9204 L1411.1606,16.5024 L1415.8442,16.5024 L1415.8442,17.9204 L1414.5337,17.9204 L1414.5337,23.082 L1415.8442,23.082 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="65" x="1429.5" y="24.3748">Component</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1164" x2="1735" y1="33" y2="33"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1164" x2="1735" y1="41" y2="41"/><ellipse cx="1174" cy="52" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="396" x="1180" y="55.6348">attachTo(parent: HTMLElement, position?: InsertPosition | undefined): void</text><ellipse cx="1174" cy="64.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="218" x="1180" y="68.5898">removeFrom(parent: HTMLElement): void</text><ellipse cx="1174" cy="77.9102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="399" x="1180" y="81.5449">attach(component: Component, position?: InsertPosition | undefined): void</text><ellipse cx="1174" cy="90.8652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="550" x="1180" y="94.5">registerEventListener(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) =&gt; any): void</text><!--MD5=[784d533083758286c885e86b9fe3090e]
+class BaseComponent--><rect codeLine="22" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="106.7754" id="BaseComponent" style="stroke:#1B1B1B;stroke-width:1.5;" width="573" x="1219" y="161"/><ellipse cx="1389.5" cy="174" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M1389.6353,178.4058 Q1388.7437,178.4058 1387.989,178.1426 Q1387.2344,177.8794 1386.6919,177.3584 Q1386.1494,176.8374 1385.8513,176.0586 Q1385.5532,175.2798 1385.5532,174.2593 Q1385.5532,173.3086 1385.8379,172.5352 Q1386.1226,171.7617 1386.665,171.2085 Q1387.186,170.6768 1387.9568,170.3867 Q1388.7275,170.0967 1389.6406,170.0967 Q1390.1455,170.0967 1390.551,170.1531 Q1390.9565,170.2095 1391.3003,170.3008 Q1391.6602,170.4028 1391.9529,170.5291 Q1392.2456,170.6553 1392.4658,170.7627 L1392.4658,172.7017 L1392.2295,172.7017 Q1392.0791,172.5728 1391.8508,172.3955 Q1391.6226,172.2183 1391.3325,172.0464 Q1391.0371,171.8745 1390.6934,171.7563 Q1390.3496,171.6382 1389.9575,171.6382 Q1389.5225,171.6382 1389.1304,171.7751 Q1388.7383,171.9121 1388.4053,172.229 Q1388.0884,172.5352 1387.8923,173.04 Q1387.6963,173.5449 1387.6963,174.2646 Q1387.6963,175.0166 1387.9084,175.5215 Q1388.1206,176.0264 1388.4429,176.3164 Q1388.7705,176.6118 1389.1733,176.738 Q1389.5762,176.8643 1389.9683,176.8643 Q1390.3442,176.8643 1390.7122,176.7515 Q1391.0801,176.6387 1391.3916,176.4453 Q1391.6548,176.2896 1391.8804,176.1123 Q1392.106,175.9351 1392.251,175.8062 L1392.4658,175.8062 L1392.4658,177.7183 Q1392.165,177.8525 1391.8911,177.9707 Q1391.6172,178.0889 1391.3164,178.1748 Q1390.9243,178.2876 1390.5806,178.3467 Q1390.2368,178.4058 1389.6353,178.4058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="1405.5" y="178.3748">BaseComponent</text><rect fill="#777777" height="14.9551" style="stroke:#AAAAAA;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="130" x="1665" y="158"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="128" x="1666" y="169.6348">T extends HTMLElement</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1220" x2="1791" y1="187" y2="187"/><polygon fill="none" points="1230,193,1234,197,1230,201,1226,197" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="55" x="1236" y="201.6348">element: T</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1220" x2="1791" y1="207.9551" y2="207.9551"/><ellipse cx="1230" cy="218.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="332" x="1236" y="222.5898">attachTo(parent: HTMLElement, position?: InsertPosition): void</text><ellipse cx="1230" cy="231.9102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="218" x="1236" y="235.5449">removeFrom(parent: HTMLElement): void</text><ellipse cx="1230" cy="244.8652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="335" x="1236" y="248.5">attach(component: Component, position?: InsertPosition): void</text><ellipse cx="1230" cy="257.8203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="550" x="1236" y="261.4551">registerEventListener(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) =&gt; any): void</text><!--MD5=[a1241d7a590723342f0d1bbfba4d9beb]
+class Composable--><rect codeLine="29" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="54.9551" id="Composable" style="stroke:#1B1B1B;stroke-width:1.5;" width="203" x="870" y="26.5"/><ellipse cx="933" cy="39.5" fill="#B4A7E5" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M935.3442,44 L930.6606,44 L930.6606,42.582 L931.9712,42.582 L931.9712,37.4204 L930.6606,37.4204 L930.6606,36.0024 L935.3442,36.0024 L935.3442,37.4204 L934.0337,37.4204 L934.0337,42.582 L935.3442,42.582 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="70" x="949" y="43.8748">Composable</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="871" x2="1072" y1="52.5" y2="52.5"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="871" x2="1072" y1="60.5" y2="60.5"/><ellipse cx="881" cy="71.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="887" y="75.1348">addChild(child: Component): void</text><!--MD5=[d6457e46ee0770f05773825f7ff7571c]
+class SectionContainer--><rect codeLine="34" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="106.7754" id="SectionContainer" style="stroke:#1B1B1B;stroke-width:1.5;" width="454" x="213.5" y="161"/><ellipse cx="388.5" cy="174" fill="#B4A7E5" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M390.8442,178.5 L386.1606,178.5 L386.1606,177.082 L387.4712,177.082 L387.4712,171.9204 L386.1606,171.9204 L386.1606,170.5024 L390.8442,170.5024 L390.8442,171.9204 L389.5337,171.9204 L389.5337,177.082 L390.8442,177.082 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="97" x="404.5" y="178.3748">SectionContainer</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="214.5" x2="666.5" y1="187" y2="187"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="214.5" x2="666.5" y1="195" y2="195"/><ellipse cx="224.5" cy="206" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="277" x="230.5" y="209.6348">setOnCloseListener(listener: OnCloseListener): void</text><ellipse cx="224.5" cy="218.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="431" x="230.5" y="222.5898">setOnDragStateListener(listener: OnDragStateListener&lt;SectionContainer&gt;): void</text><ellipse cx="224.5" cy="231.9102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="236" x="230.5" y="235.5449">muteChildren(state: "mute" | "unmute"): void</text><ellipse cx="224.5" cy="244.8652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="230.5" y="248.5">getBoundingRect(): DOMRect</text><ellipse cx="224.5" cy="257.8203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="230.5" y="261.4551">onDropped(): void</text><!--MD5=[47c0a5a25632895b75fd694587da7eaa]
+class PageItemComponent--><rect codeLine="42" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="210.416" id="PageItemComponent" style="stroke:#1B1B1B;stroke-width:1.5;" width="473" x="9" y="328"/><ellipse cx="182" cy="341" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M182.1353,345.4058 Q181.2437,345.4058 180.489,345.1426 Q179.7344,344.8794 179.1919,344.3584 Q178.6494,343.8374 178.3513,343.0586 Q178.0532,342.2798 178.0532,341.2593 Q178.0532,340.3086 178.3379,339.5352 Q178.6226,338.7617 179.165,338.2085 Q179.686,337.6768 180.4568,337.3867 Q181.2275,337.0967 182.1406,337.0967 Q182.6455,337.0967 183.051,337.1531 Q183.4565,337.2095 183.8003,337.3008 Q184.1602,337.4028 184.4529,337.5291 Q184.7456,337.6553 184.9658,337.7627 L184.9658,339.7017 L184.7295,339.7017 Q184.5791,339.5728 184.3508,339.3955 Q184.1226,339.2183 183.8325,339.0464 Q183.5371,338.8745 183.1934,338.7563 Q182.8496,338.6382 182.4575,338.6382 Q182.0225,338.6382 181.6304,338.7751 Q181.2383,338.9121 180.9053,339.229 Q180.5884,339.5352 180.3923,340.04 Q180.1963,340.5449 180.1963,341.2646 Q180.1963,342.0166 180.4084,342.5215 Q180.6206,343.0264 180.9429,343.3164 Q181.2705,343.6118 181.6733,343.738 Q182.0762,343.8643 182.4683,343.8643 Q182.8442,343.8643 183.2122,343.7515 Q183.5801,343.6387 183.8916,343.4453 Q184.1548,343.2896 184.3804,343.1123 Q184.606,342.9351 184.751,342.8062 L184.9658,342.8062 L184.9658,344.7183 Q184.665,344.8525 184.3911,344.9707 Q184.1172,345.0889 183.8164,345.1748 Q183.4243,345.2876 183.0806,345.3467 Q182.7368,345.4058 182.1353,345.4058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="120" x="198" y="345.3748">PageItemComponent</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="10" x2="481" y1="354" y2="354"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="362"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="26" y="368.6348">closeListener?: OnCloseListener | undefined</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="17" y="374.9551"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="409" x="26" y="381.5898">dragStateListener?: OnDragStateListener&lt;PageItemComponent&gt; | undefined</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="10" x2="481" y1="387.9102" y2="387.9102"/><ellipse cx="20" cy="398.9102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="26" y="402.5449">onDragStart(_: DragEvent): void</text><ellipse cx="20" cy="411.8652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="164" x="26" y="415.5">onDragEnd(_: DragEvent): void</text><ellipse cx="20" cy="424.8203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="26" y="428.4551">onDragEnter(_: DragEvent): void</text><ellipse cx="20" cy="437.7754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="174" x="26" y="441.4102">onDragLeave(_: DragEvent): void</text><ellipse cx="20" cy="450.7305" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="26" y="454.3652">onDropped(): void</text><ellipse cx="20" cy="463.6855" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="234" x="26" y="467.3203">notifyDragObservers(state: DragState): void</text><ellipse cx="20" cy="476.6406" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="26" y="480.2754">addChild(child: Component): void</text><ellipse cx="20" cy="489.5957" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="277" x="26" y="493.2305">setOnCloseListener(listener: OnCloseListener): void</text><ellipse cx="20" cy="502.5508" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="450" x="26" y="506.1855">setOnDragStateListener(listener: OnDragStateListener&lt;PageItemComponent&gt;): void</text><ellipse cx="20" cy="515.5059" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="236" x="26" y="519.1406">muteChildren(state: "mute" | "unmute"): void</text><ellipse cx="20" cy="528.4609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="26" y="532.0957">getBoundingRect(): DOMRect</text><!--MD5=[002e8e2bfd01649225626de164f62fd3]
+class PageComponent--><rect codeLine="57" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="145.6406" id="PageComponent" style="stroke:#1B1B1B;stroke-width:1.5;" width="302" x="576.5" y="360"/><ellipse cx="677.5" cy="373" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M677.6353,377.4058 Q676.7437,377.4058 675.989,377.1426 Q675.2344,376.8794 674.6919,376.3584 Q674.1494,375.8374 673.8513,375.0586 Q673.5532,374.2798 673.5532,373.2593 Q673.5532,372.3086 673.8379,371.5352 Q674.1226,370.7617 674.665,370.2085 Q675.186,369.6768 675.9568,369.3867 Q676.7275,369.0967 677.6406,369.0967 Q678.1455,369.0967 678.551,369.1531 Q678.9565,369.2095 679.3003,369.3008 Q679.6602,369.4028 679.9529,369.5291 Q680.2456,369.6553 680.4658,369.7627 L680.4658,371.7017 L680.2295,371.7017 Q680.0791,371.5728 679.8508,371.3955 Q679.6226,371.2183 679.3325,371.0464 Q679.0371,370.8745 678.6934,370.7563 Q678.3496,370.6382 677.9575,370.6382 Q677.5225,370.6382 677.1304,370.7751 Q676.7383,370.9121 676.4053,371.229 Q676.0884,371.5352 675.8923,372.04 Q675.6963,372.5449 675.6963,373.2646 Q675.6963,374.0166 675.9084,374.5215 Q676.1206,375.0264 676.4429,375.3164 Q676.7705,375.6118 677.1733,375.738 Q677.5762,375.8643 677.9683,375.8643 Q678.3442,375.8643 678.7122,375.7515 Q679.0801,375.6387 679.3916,375.4453 Q679.6548,375.2896 679.8804,375.1123 Q680.106,374.9351 680.251,374.8062 L680.4658,374.8062 L680.4658,376.7183 Q680.165,376.8525 679.8911,376.9707 Q679.6172,377.0889 679.3164,377.1748 Q678.9243,377.2876 678.5806,377.3467 Q678.2368,377.4058 677.6353,377.4058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="693.5" y="377.3748">PageComponent</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="577.5" x2="877.5" y1="386" y2="386"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="584.5" y="394"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="593.5" y="400.6348">children: Set&lt;SectionContainer&gt;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="584.5" y="406.9551"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="227" x="593.5" y="413.5898">dragTarget?: SectionContainer | undefined</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="584.5" y="419.9102"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="228" x="593.5" y="426.5449">dropTarget?: SectionContainer | undefined</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="584.5" y="432.8652"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="279" x="593.5" y="439.5">pageItemConstructor: SectionContainerConstructor</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="577.5" x2="877.5" y1="445.8203" y2="445.8203"/><ellipse cx="587.5" cy="456.8203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="170" x="593.5" y="460.4551">onDragOver(_: DragEvent): void</text><ellipse cx="587.5" cy="469.7754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="593.5" y="473.4102">onDrop(event: DragEvent): void</text><ellipse cx="587.5" cy="482.7305" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="193" x="593.5" y="486.3652">addChild(section: Component): void</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="584.5" y="492.6855"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="245" x="593.5" y="499.3203">updateSections(state: "mute" | "unmute"): void</text><!--MD5=[f04caf4d3883690db4799f0a11b3f223]
+class MediaData--><rect codeLine="67" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="67.9102" id="MediaData" style="stroke:#1B1B1B;stroke-width:1.5;" width="85" x="2197" y="180.5"/><ellipse cx="2209" cy="193.5" fill="#B4A7E5" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M2211.3442,198 L2206.6606,198 L2206.6606,196.582 L2207.9712,196.582 L2207.9712,191.4204 L2206.6606,191.4204 L2206.6606,190.0024 L2211.3442,190.0024 L2211.3442,191.4204 L2210.0337,191.4204 L2210.0337,196.582 L2211.3442,196.582 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="59" x="2220" y="197.8748">MediaData</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="2198" x2="2281" y1="206.5" y2="206.5"/><ellipse cx="2208" cy="217.5" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="2214" y="221.1348">title: string</text><ellipse cx="2208" cy="230.4551" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="53" x="2214" y="234.0898">url: string</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="2198" x2="2281" y1="240.4102" y2="240.4102"/><!--MD5=[331464750099696dbd967b3d37e9e7fc]
+class TextData--><rect codeLine="71" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="67.9102" id="TextData" style="stroke:#1B1B1B;stroke-width:1.5;" width="88" x="1095.5" y="180.5"/><ellipse cx="1112.45" cy="193.5" fill="#B4A7E5" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M1114.7942,198 L1110.1106,198 L1110.1106,196.582 L1111.4212,196.582 L1111.4212,191.4204 L1110.1106,191.4204 L1110.1106,190.0024 L1114.7942,190.0024 L1114.7942,191.4204 L1113.4837,191.4204 L1113.4837,196.582 L1114.7942,196.582 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="51" x="1124.55" y="197.8748">TextData</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1096.5" x2="1182.5" y1="206.5" y2="206.5"/><ellipse cx="1106.5" cy="217.5" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="1112.5" y="221.1348">title: string</text><ellipse cx="1106.5" cy="230.4551" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="1112.5" y="234.0898">body: string</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1096.5" x2="1182.5" y1="240.4102" y2="240.4102"/><!--MD5=[9992ecd7fe6c5aef10592552f8c98f1c]
+class InputDialog--><rect codeLine="75" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="106.7754" id="InputDialog" style="stroke:#1B1B1B;stroke-width:1.5;" width="308" x="913.5" y="379.5"/><ellipse cx="1031.5" cy="392.5" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M1031.6353,396.9058 Q1030.7437,396.9058 1029.989,396.6426 Q1029.2344,396.3794 1028.6919,395.8584 Q1028.1494,395.3374 1027.8513,394.5586 Q1027.5532,393.7798 1027.5532,392.7593 Q1027.5532,391.8086 1027.8379,391.0352 Q1028.1226,390.2617 1028.665,389.7085 Q1029.186,389.1768 1029.9568,388.8867 Q1030.7275,388.5967 1031.6406,388.5967 Q1032.1455,388.5967 1032.551,388.6531 Q1032.9565,388.7095 1033.3003,388.8008 Q1033.6602,388.9028 1033.9529,389.0291 Q1034.2456,389.1553 1034.4658,389.2627 L1034.4658,391.2017 L1034.2295,391.2017 Q1034.0791,391.0728 1033.8508,390.8955 Q1033.6226,390.7183 1033.3325,390.5464 Q1033.0371,390.3745 1032.6934,390.2563 Q1032.3496,390.1382 1031.9575,390.1382 Q1031.5225,390.1382 1031.1304,390.2751 Q1030.7383,390.4121 1030.4053,390.729 Q1030.0884,391.0352 1029.8923,391.54 Q1029.6963,392.0449 1029.6963,392.7646 Q1029.6963,393.5166 1029.9084,394.0215 Q1030.1206,394.5264 1030.4429,394.8164 Q1030.7705,395.1118 1031.1733,395.238 Q1031.5762,395.3643 1031.9683,395.3643 Q1032.3442,395.3643 1032.7122,395.2515 Q1033.0801,395.1387 1033.3916,394.9453 Q1033.6548,394.7896 1033.8804,394.6123 Q1034.106,394.4351 1034.251,394.3062 L1034.4658,394.3062 L1034.4658,396.2183 Q1034.165,396.3525 1033.8911,396.4707 Q1033.6172,396.5889 1033.3164,396.6748 Q1032.9243,396.7876 1032.5806,396.8467 Q1032.2368,396.9058 1031.6353,396.9058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="65" x="1047.5" y="396.8748">InputDialog</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="914.5" x2="1220.5" y1="405.5" y2="405.5"/><ellipse cx="924.5" cy="416.5" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="235" x="930.5" y="420.1348">closeListener?: OnCloseListener | undefined</text><ellipse cx="924.5" cy="429.4551" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="251" x="930.5" y="433.0898">submitListener?: OnSubmitListener | undefined</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="914.5" x2="1220.5" y1="439.4102" y2="439.4102"/><ellipse cx="924.5" cy="450.4102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="271" x="930.5" y="454.0449">setOnCloseListenr(listener: OnCloseListener): void</text><ellipse cx="924.5" cy="463.3652" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="285" x="930.5" y="467">setOnSubmitListenr(listener: OnSubmitListener): void</text><ellipse cx="924.5" cy="476.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="180" x="930.5" y="479.9551">addChild(child: Component): void</text><!--MD5=[da5ef0de51cbf1fedd106c4da847a09b]
+class TextSectionInput--><rect codeLine="82" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="67.9102" id="TextSectionInput" style="stroke:#1B1B1B;stroke-width:1.5;" width="123" x="1257" y="399"/><ellipse cx="1269" cy="412" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M1269.1353,416.4058 Q1268.2437,416.4058 1267.489,416.1426 Q1266.7344,415.8794 1266.1919,415.3584 Q1265.6494,414.8374 1265.3513,414.0586 Q1265.0532,413.2798 1265.0532,412.2593 Q1265.0532,411.3086 1265.3379,410.5352 Q1265.6226,409.7617 1266.165,409.2085 Q1266.686,408.6768 1267.4568,408.3867 Q1268.2275,408.0967 1269.1406,408.0967 Q1269.6455,408.0967 1270.051,408.1531 Q1270.4565,408.2095 1270.8003,408.3008 Q1271.1602,408.4028 1271.4529,408.5291 Q1271.7456,408.6553 1271.9658,408.7627 L1271.9658,410.7017 L1271.7295,410.7017 Q1271.5791,410.5728 1271.3508,410.3955 Q1271.1226,410.2183 1270.8325,410.0464 Q1270.5371,409.8745 1270.1934,409.7563 Q1269.8496,409.6382 1269.4575,409.6382 Q1269.0225,409.6382 1268.6304,409.7751 Q1268.2383,409.9121 1267.9053,410.229 Q1267.5884,410.5352 1267.3923,411.04 Q1267.1963,411.5449 1267.1963,412.2646 Q1267.1963,413.0166 1267.4084,413.5215 Q1267.6206,414.0264 1267.9429,414.3164 Q1268.2705,414.6118 1268.6733,414.738 Q1269.0762,414.8643 1269.4683,414.8643 Q1269.8442,414.8643 1270.2122,414.7515 Q1270.5801,414.6387 1270.8916,414.4453 Q1271.1548,414.2896 1271.3804,414.1123 Q1271.606,413.9351 1271.751,413.8062 L1271.9658,413.8062 L1271.9658,415.7183 Q1271.665,415.8525 1271.3911,415.9707 Q1271.1172,416.0889 1270.8164,416.1748 Q1270.4243,416.2876 1270.0806,416.3467 Q1269.7368,416.4058 1269.1353,416.4058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="97" x="1280" y="416.3748">TextSectionInput</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1258" x2="1379" y1="425" y2="425"/><ellipse cx="1268" cy="436" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="1274" y="439.6348">title: string</text><ellipse cx="1268" cy="448.9551" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="1274" y="452.5898">body: string</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1258" x2="1379" y1="458.9102" y2="458.9102"/><!--MD5=[33f5aa59c2b6888880ebc3bb42693dbb]
+class MediaSectionInput--><rect codeLine="86" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="67.9102" id="MediaSectionInput" style="stroke:#1B1B1B;stroke-width:1.5;" width="131" x="2174" y="399"/><ellipse cx="2186" cy="412" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M2186.1353,416.4058 Q2185.2437,416.4058 2184.489,416.1426 Q2183.7344,415.8794 2183.1919,415.3584 Q2182.6494,414.8374 2182.3513,414.0586 Q2182.0532,413.2798 2182.0532,412.2593 Q2182.0532,411.3086 2182.3379,410.5352 Q2182.6226,409.7617 2183.165,409.2085 Q2183.686,408.6768 2184.4568,408.3867 Q2185.2275,408.0967 2186.1406,408.0967 Q2186.6455,408.0967 2187.051,408.1531 Q2187.4565,408.2095 2187.8003,408.3008 Q2188.1602,408.4028 2188.4529,408.5291 Q2188.7456,408.6553 2188.9658,408.7627 L2188.9658,410.7017 L2188.7295,410.7017 Q2188.5791,410.5728 2188.3508,410.3955 Q2188.1226,410.2183 2187.8325,410.0464 Q2187.5371,409.8745 2187.1934,409.7563 Q2186.8496,409.6382 2186.4575,409.6382 Q2186.0225,409.6382 2185.6304,409.7751 Q2185.2383,409.9121 2184.9053,410.229 Q2184.5884,410.5352 2184.3923,411.04 Q2184.1963,411.5449 2184.1963,412.2646 Q2184.1963,413.0166 2184.4084,413.5215 Q2184.6206,414.0264 2184.9429,414.3164 Q2185.2705,414.6118 2185.6733,414.738 Q2186.0762,414.8643 2186.4683,414.8643 Q2186.8442,414.8643 2187.2122,414.7515 Q2187.5801,414.6387 2187.8916,414.4453 Q2188.1548,414.2896 2188.3804,414.1123 Q2188.606,413.9351 2188.751,413.8062 L2188.9658,413.8062 L2188.9658,415.7183 Q2188.665,415.8525 2188.3911,415.9707 Q2188.1172,416.0889 2187.8164,416.1748 Q2187.4243,416.2876 2187.0806,416.3467 Q2186.7368,416.4058 2186.1353,416.4058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="105" x="2197" y="416.3748">MediaSectionInput</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="2175" x2="2304" y1="425" y2="425"/><ellipse cx="2185" cy="436" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="58" x="2191" y="439.6348">title: string</text><ellipse cx="2185" cy="448.9551" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="53" x="2191" y="452.5898">url: string</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="2175" x2="2304" y1="458.9102" y2="458.9102"/><!--MD5=[5e732eea2472c00750f31206498f0d23]
+class VideoComponent--><rect codeLine="90" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="54.9551" id="VideoComponent" style="stroke:#1B1B1B;stroke-width:1.5;" width="254" x="1578.5" y="405.5"/><ellipse cx="1653.5" cy="418.5" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M1653.6353,422.9058 Q1652.7437,422.9058 1651.989,422.6426 Q1651.2344,422.3794 1650.6919,421.8584 Q1650.1494,421.3374 1649.8513,420.5586 Q1649.5532,419.7798 1649.5532,418.7593 Q1649.5532,417.8086 1649.8379,417.0352 Q1650.1226,416.2617 1650.665,415.7085 Q1651.186,415.1768 1651.9568,414.8867 Q1652.7275,414.5967 1653.6406,414.5967 Q1654.1455,414.5967 1654.551,414.6531 Q1654.9565,414.7095 1655.3003,414.8008 Q1655.6602,414.9028 1655.9529,415.0291 Q1656.2456,415.1553 1656.4658,415.2627 L1656.4658,417.2017 L1656.2295,417.2017 Q1656.0791,417.0728 1655.8508,416.8955 Q1655.6226,416.7183 1655.3325,416.5464 Q1655.0371,416.3745 1654.6934,416.2563 Q1654.3496,416.1382 1653.9575,416.1382 Q1653.5225,416.1382 1653.1304,416.2751 Q1652.7383,416.4121 1652.4053,416.729 Q1652.0884,417.0352 1651.8923,417.54 Q1651.6963,418.0449 1651.6963,418.7646 Q1651.6963,419.5166 1651.9084,420.0215 Q1652.1206,420.5264 1652.4429,420.8164 Q1652.7705,421.1118 1653.1733,421.238 Q1653.5762,421.3643 1653.9683,421.3643 Q1654.3442,421.3643 1654.7122,421.2515 Q1655.0801,421.1387 1655.3916,420.9453 Q1655.6548,420.7896 1655.8804,420.6123 Q1656.106,420.4351 1656.251,420.3062 L1656.4658,420.3062 L1656.4658,422.2183 Q1656.165,422.3525 1655.8911,422.4707 Q1655.6172,422.5889 1655.3164,422.6748 Q1654.9243,422.7876 1654.5806,422.8467 Q1654.2368,422.9058 1653.6353,422.9058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="97" x="1669.5" y="422.8748">VideoComponent</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1579.5" x2="1831.5" y1="431.5" y2="431.5"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1579.5" x2="1831.5" y1="439.5" y2="439.5"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1586.5" y="447.5"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="231" x="1595.5" y="454.1348">convertToEmbeddedURL(url: string): string</text><!--MD5=[e24719c9bee2a46e4c50d47e5395df69]
+class TodoComponent--><rect codeLine="93" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="42" id="TodoComponent" style="stroke:#1B1B1B;stroke-width:1.5;" width="119" x="1868" y="412"/><ellipse cx="1880" cy="425" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M1880.1353,429.4058 Q1879.2437,429.4058 1878.489,429.1426 Q1877.7344,428.8794 1877.1919,428.3584 Q1876.6494,427.8374 1876.3513,427.0586 Q1876.0532,426.2798 1876.0532,425.2593 Q1876.0532,424.3086 1876.3379,423.5352 Q1876.6226,422.7617 1877.165,422.2085 Q1877.686,421.6768 1878.4568,421.3867 Q1879.2275,421.0967 1880.1406,421.0967 Q1880.6455,421.0967 1881.051,421.1531 Q1881.4565,421.2095 1881.8003,421.3008 Q1882.1602,421.4028 1882.4529,421.5291 Q1882.7456,421.6553 1882.9658,421.7627 L1882.9658,423.7017 L1882.7295,423.7017 Q1882.5791,423.5728 1882.3508,423.3955 Q1882.1226,423.2183 1881.8325,423.0464 Q1881.5371,422.8745 1881.1934,422.7563 Q1880.8496,422.6382 1880.4575,422.6382 Q1880.0225,422.6382 1879.6304,422.7751 Q1879.2383,422.9121 1878.9053,423.229 Q1878.5884,423.5352 1878.3923,424.04 Q1878.1963,424.5449 1878.1963,425.2646 Q1878.1963,426.0166 1878.4084,426.5215 Q1878.6206,427.0264 1878.9429,427.3164 Q1879.2705,427.6118 1879.6733,427.738 Q1880.0762,427.8643 1880.4683,427.8643 Q1880.8442,427.8643 1881.2122,427.7515 Q1881.5801,427.6387 1881.8916,427.4453 Q1882.1548,427.2896 1882.3804,427.1123 Q1882.606,426.9351 1882.751,426.8062 L1882.9658,426.8062 L1882.9658,428.7183 Q1882.665,428.8525 1882.3911,428.9707 Q1882.1172,429.0889 1881.8164,429.1748 Q1881.4243,429.2876 1881.0806,429.3467 Q1880.7368,429.4058 1880.1353,429.4058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="93" x="1891" y="429.3748">TodoComponent</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1869" x2="1986" y1="438" y2="438"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1869" x2="1986" y1="446" y2="446"/><!--MD5=[4c7ef9db262b3cdbea95a93c67ad5307]
+class NoteComponent--><rect codeLine="94" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="42" id="NoteComponent" style="stroke:#1B1B1B;stroke-width:1.5;" width="117" x="2022" y="412"/><ellipse cx="2034" cy="425" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M2034.1353,429.4058 Q2033.2437,429.4058 2032.489,429.1426 Q2031.7344,428.8794 2031.1919,428.3584 Q2030.6494,427.8374 2030.3513,427.0586 Q2030.0532,426.2798 2030.0532,425.2593 Q2030.0532,424.3086 2030.3379,423.5352 Q2030.6226,422.7617 2031.165,422.2085 Q2031.686,421.6768 2032.4568,421.3867 Q2033.2275,421.0967 2034.1406,421.0967 Q2034.6455,421.0967 2035.051,421.1531 Q2035.4565,421.2095 2035.8003,421.3008 Q2036.1602,421.4028 2036.4529,421.5291 Q2036.7456,421.6553 2036.9658,421.7627 L2036.9658,423.7017 L2036.7295,423.7017 Q2036.5791,423.5728 2036.3508,423.3955 Q2036.1226,423.2183 2035.8325,423.0464 Q2035.5371,422.8745 2035.1934,422.7563 Q2034.8496,422.6382 2034.4575,422.6382 Q2034.0225,422.6382 2033.6304,422.7751 Q2033.2383,422.9121 2032.9053,423.229 Q2032.5884,423.5352 2032.3923,424.04 Q2032.1963,424.5449 2032.1963,425.2646 Q2032.1963,426.0166 2032.4084,426.5215 Q2032.6206,427.0264 2032.9429,427.3164 Q2033.2705,427.6118 2033.6733,427.738 Q2034.0762,427.8643 2034.4683,427.8643 Q2034.8442,427.8643 2035.2122,427.7515 Q2035.5801,427.6387 2035.8916,427.4453 Q2036.1548,427.2896 2036.3804,427.1123 Q2036.606,426.9351 2036.751,426.8062 L2036.9658,426.8062 L2036.9658,428.7183 Q2036.665,428.8525 2036.3911,428.9707 Q2036.1172,429.0889 2035.8164,429.1748 Q2035.4243,429.2876 2035.0806,429.3467 Q2034.7368,429.4058 2034.1353,429.4058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="91" x="2045" y="429.3748">NoteComponent</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="2023" x2="2138" y1="438" y2="438"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="2023" x2="2138" y1="446" y2="446"/><!--MD5=[2ef76b0ddb2775e9b53b31b61ce34193]
+class ImageComponent--><rect codeLine="95" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="42" id="ImageComponent" style="stroke:#1B1B1B;stroke-width:1.5;" width="128" x="1415.5" y="412"/><ellipse cx="1427.5" cy="425" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M1427.6353,429.4058 Q1426.7437,429.4058 1425.989,429.1426 Q1425.2344,428.8794 1424.6919,428.3584 Q1424.1494,427.8374 1423.8513,427.0586 Q1423.5532,426.2798 1423.5532,425.2593 Q1423.5532,424.3086 1423.8379,423.5352 Q1424.1226,422.7617 1424.665,422.2085 Q1425.186,421.6768 1425.9568,421.3867 Q1426.7275,421.0967 1427.6406,421.0967 Q1428.1455,421.0967 1428.551,421.1531 Q1428.9565,421.2095 1429.3003,421.3008 Q1429.6602,421.4028 1429.9529,421.5291 Q1430.2456,421.6553 1430.4658,421.7627 L1430.4658,423.7017 L1430.2295,423.7017 Q1430.0791,423.5728 1429.8508,423.3955 Q1429.6226,423.2183 1429.3325,423.0464 Q1429.0371,422.8745 1428.6934,422.7563 Q1428.3496,422.6382 1427.9575,422.6382 Q1427.5225,422.6382 1427.1304,422.7751 Q1426.7383,422.9121 1426.4053,423.229 Q1426.0884,423.5352 1425.8923,424.04 Q1425.6963,424.5449 1425.6963,425.2646 Q1425.6963,426.0166 1425.9084,426.5215 Q1426.1206,427.0264 1426.4429,427.3164 Q1426.7705,427.6118 1427.1733,427.738 Q1427.5762,427.8643 1427.9683,427.8643 Q1428.3442,427.8643 1428.7122,427.7515 Q1429.0801,427.6387 1429.3916,427.4453 Q1429.6548,427.2896 1429.8804,427.1123 Q1430.106,426.9351 1430.251,426.8062 L1430.4658,426.8062 L1430.4658,428.7183 Q1430.165,428.8525 1429.8911,428.9707 Q1429.6172,429.0889 1429.3164,429.1748 Q1428.9243,429.2876 1428.5806,429.3467 Q1428.2368,429.4058 1427.6353,429.4058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="102" x="1438.5" y="429.3748">ImageComponent</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1416.5" x2="1542.5" y1="438" y2="438"/><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1416.5" x2="1542.5" y1="446" y2="446"/><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><rect codeLine="96" fill="#2E2E2E" filter="url(#fzmmbdy1p1vxv)" height="80.8652" id="App" style="stroke:#1B1B1B;stroke-width:1.5;" width="755" x="1771" y="13.5"/><ellipse cx="2134" cy="26.5" fill="#BB6600" rx="8" ry="8" style="stroke:#1B1B1B;stroke-width:1.0;"/><path d="M2134.1353,30.9058 Q2133.2437,30.9058 2132.489,30.6426 Q2131.7344,30.3794 2131.1919,29.8584 Q2130.6494,29.3374 2130.3513,28.5586 Q2130.0532,27.7798 2130.0532,26.7593 Q2130.0532,25.8086 2130.3379,25.0352 Q2130.6226,24.2617 2131.165,23.7085 Q2131.686,23.1768 2132.4568,22.8867 Q2133.2275,22.5967 2134.1406,22.5967 Q2134.6455,22.5967 2135.051,22.6531 Q2135.4565,22.7095 2135.8003,22.8008 Q2136.1602,22.9028 2136.4529,23.0291 Q2136.7456,23.1553 2136.9658,23.2627 L2136.9658,25.2017 L2136.7295,25.2017 Q2136.5791,25.0728 2136.3508,24.8955 Q2136.1226,24.7183 2135.8325,24.5464 Q2135.5371,24.3745 2135.1934,24.2563 Q2134.8496,24.1382 2134.4575,24.1382 Q2134.0225,24.1382 2133.6304,24.2751 Q2133.2383,24.4121 2132.9053,24.729 Q2132.5884,25.0352 2132.3923,25.54 Q2132.1963,26.0449 2132.1963,26.7646 Q2132.1963,27.5166 2132.4084,28.0215 Q2132.6206,28.5264 2132.9429,28.8164 Q2133.2705,29.1118 2133.6733,29.238 Q2134.0762,29.3643 2134.4683,29.3643 Q2134.8442,29.3643 2135.2122,29.2515 Q2135.5801,29.1387 2135.8916,28.9453 Q2136.1548,28.7896 2136.3804,28.6123 Q2136.606,28.4351 2136.751,28.3062 L2136.9658,28.3062 L2136.9658,30.2183 Q2136.665,30.3525 2136.3911,30.4707 Q2136.1172,30.5889 2135.8164,30.6748 Q2135.4243,30.7876 2135.0806,30.8467 Q2134.7368,30.9058 2134.1353,30.9058 Z " fill="#000000"/><text fill="#FFFFFF" font-family="Verdana" font-size="11" lengthAdjust="spacing" textLength="22" x="2150" y="30.8748">App</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1772" x2="2525" y1="39.5" y2="39.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1779" y="47.5"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="1788" y="54.1348">page: Component &amp; Composable</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1779" y="60.4551"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="1788" y="67.0898">dialogRoot: HTMLElement</text><line style="stroke:#1B1B1B;stroke-width:1.5;" x1="1772" x2="2525" y1="73.4102" y2="73.4102"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1779" y="81.4102"/><text fill="#AAAAAA" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="732" x="1788" y="88.0449">bindElementToDialog(selector: string, InputComponent: InputComponentConstructor&lt;T&gt;, makeSection: (input: T) =&gt; Component): void</text><!--MD5=[5138e1726e9722808680e9cc81e45b35]
+reverse link Component to BaseComponent--><path d="M1472.6,120.39 C1477.35,133.83 1482.3,147.83 1486.87,160.76 " fill="none" id="Component-backto-BaseComponent" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1465.91,122.46,1465.85,101.27,1479.11,117.8,1465.91,122.46" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[c39c3490e5aa4b0d319f3c28b36aac2e]
+reverse link Component to SectionContainer--><path d="M1143.07,95.11 C969.86,118.25 771.11,145.7 684.5,161 C678.95,161.98 673.34,163 667.68,164.04 " fill="none" id="Component-backto-SectionContainer" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1142.23,88.16,1162.98,92.45,1144.08,102.04,1142.23,88.16" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[3a9df5a00790f8351a269bf9e437b4fd]
+reverse link Composable to SectionContainer--><path d="M863.27,87.3 C792.37,108.47 698.06,136.62 616.52,160.96 " fill="none" id="Composable-backto-SectionContainer" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="861.46,80.54,882.62,81.53,865.46,93.96,861.46,80.54" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[d6c22bafdefa56c8d86540a3c126c5dc]
+reverse link Draggable to SectionContainer--><path d="M200.64,96.88 C240.97,116.49 289.44,140.06 332.22,160.86 " fill="none" id="Draggable-backto-SectionContainer" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="197.37,103.07,182.44,88.03,203.49,90.48,197.37,103.07" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[e44c4f1234205f276410f4347f430607]
+reverse link Hoverable to SectionContainer--><path d="M407.68,107.34 C413.01,124.57 418.93,143.73 424.26,160.98 " fill="none" id="Hoverable-backto-SectionContainer" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="400.99,109.4,401.77,88.23,414.37,105.27,400.99,109.4" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[38c3067405c9cda2a66805e4f66163d5]
+reverse link BaseComponent to PageItemComponent--><path d="M1198.78,268.23 C913.39,304.18 833.09,270.36 558.5,328 C533.56,333.23 507.84,339.79 482.35,347.05 " fill="none" id="BaseComponent-backto-PageItemComponent" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1198.04,261.27,1218.78,265.64,1199.84,275.15,1198.04,261.27" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[b697d3d8c1575e7031f06f637f97308a]
+reverse link SectionContainer to PageItemComponent--><path d="M379.62,283.09 C366.85,297.27 353.1,312.54 339.44,327.7 " fill="none" id="SectionContainer-backto-PageItemComponent" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="374.46,278.36,393.05,268.19,384.86,287.73,374.46,278.36" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[a90b84ef3c569ae83fff9dea06aa1678]
+reverse link Draggable to PageItemComponent--><path d="M112.27,108.44 C112.12,152.5 115.85,215.99 134.5,268 C141.81,288.39 152.25,308.67 163.83,327.67 " fill="none" id="Draggable-backto-PageItemComponent" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="105.27,108.08,112.62,88.21,119.27,108.32,105.27,108.08" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[7f99de809fcd040ff3ebd6155b32f9c0]
+reverse link Hoverable to PageItemComponent--><path d="M265.88,97.34 C237.96,112.87 211.83,133.61 195.5,161 C165.68,211.03 175.53,274.77 194.07,327.86 " fill="none" id="Hoverable-backto-PageItemComponent" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="262.93,90.99,283.92,88.09,269.31,103.44,262.93,90.99" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[d12126b444a36097ccaa28cd1894f2d3]
+reverse link BaseComponent to PageComponent--><path d="M1198.8,269.56 C1054.79,295.39 911.08,321.99 895.5,328 C873.58,336.46 851.36,347.84 830.57,359.97 " fill="none" id="BaseComponent-backto-PageComponent" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1197.72,262.64,1218.64,266.01,1200.19,276.42,1197.72,262.64" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[3f57782c9d012a90413e5f7a0620cd54]
+reverse link Composable to PageComponent--><path d="M973.01,101.86 C972.4,147.36 965.83,216.85 935.5,268 C914.27,303.8 882.06,334.78 849.28,359.88 " fill="none" id="Composable-backto-PageComponent" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="966.01,101.67,972.9,81.64,980.01,101.6,966.01,101.67" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[1b0d3acfaa38446871ed45cd062db590]
+reverse link Droppable to PageComponent--><path d="M790.53,267.59 C779.96,295.17 766.81,329.47 755.26,359.6 " fill="none" id="Droppable-backto-PageComponent" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="784.02,265.02,797.71,248.85,797.09,270.03,784.02,265.02" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[38c76dcf1710a99e22dc8169eff82ceb]
+reverse link BaseComponent to InputDialog--><path d="M1352.39,275.82 C1314.98,291.77 1275.4,309.68 1239.5,328 C1209.35,343.39 1177.36,362.05 1149.24,379.29 " fill="none" id="BaseComponent-backto-InputDialog" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1349.7,269.36,1370.85,268.03,1355.14,282.26,1349.7,269.36" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[c916b82a59b6124f880d36f4575413b9]
+reverse link Composable to InputDialog--><path d="M983.26,101.19 C1001.19,171.59 1035.25,305.35 1054.1,379.39 " fill="none" id="Composable-backto-InputDialog" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="976.4,102.62,978.25,81.51,989.97,99.16,976.4,102.62" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[c0ad5c376093cdba161b7e464330608e]
+reverse link BaseComponent to TextSectionInput--><path d="M1439.11,283.02 C1425.39,297.6 1411.25,313.11 1398.5,328 C1378.8,351.01 1357.97,378.19 1342.51,398.98 " fill="none" id="BaseComponent-backto-TextSectionInput" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1434.31,277.9,1453.17,268.23,1444.46,287.55,1434.31,277.9" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[8502586d6d2d6a9bfd1df2c1db792c9d]
+reverse link TextData to TextSectionInput--><path d="M1183.88,263.78 C1201.54,283.41 1221.82,306.5 1239.5,328 C1258.51,351.12 1278.92,378.05 1294.23,398.71 " fill="none" id="TextData-backto-TextSectionInput" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1178.62,268.4,1170.39,248.88,1189,259,1178.62,268.4" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[074282b944634d9e7903f3dd6de96b9f]
+reverse link BaseComponent to MediaSectionInput--><path d="M1812.23,247.47 C1951.16,266.17 2097.4,293.04 2156.5,328 C2184.93,344.82 2207.5,375.3 2221.88,398.93 " fill="none" id="BaseComponent-backto-MediaSectionInput" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1811.15,254.39,1792.24,244.83,1812.99,240.51,1811.15,254.39" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[b3d00d912329a319a03e4d346f28d424]
+reverse link MediaData to MediaSectionInput--><path d="M2239.5,268.96 C2239.5,309.67 2239.5,364.42 2239.5,398.96 " fill="none" id="MediaData-backto-MediaSectionInput" style="stroke:#FFFFFF;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2232.5,268.85,2239.5,248.85,2246.5,268.85,2232.5,268.85" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[46d660da38c5c95ffda6b06b7e7d3ba2]
+reverse link BaseComponent to VideoComponent--><path d="M1567.83,282.97 C1606.09,324.39 1652.98,375.15 1680.98,405.46 " fill="none" id="BaseComponent-backto-VideoComponent" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1562.6,287.63,1554.17,268.19,1572.88,278.13,1562.6,287.63" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[b5ec4a4f46e91018b579491d2f3e7f4e]
+reverse link BaseComponent to TodoComponent--><path d="M1753.69,275.58 C1787.91,289.69 1821.28,306.95 1850.5,328 C1881.3,350.19 1904.99,388.41 1917.54,411.82 " fill="none" id="BaseComponent-backto-TodoComponent" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1750.66,281.9,1734.62,268.06,1755.8,268.88,1750.66,281.9" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[e265c7727f9531c564615a99e1f247a0]
+reverse link BaseComponent to NoteComponent--><path d="M1812.02,248.47 C1879.17,265.27 1947.23,290.42 2004.5,328 C2036.28,348.86 2059.37,387.88 2071.29,411.74 " fill="none" id="BaseComponent-backto-NoteComponent" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1810,255.19,1792.17,243.74,1813.25,241.57,1810,255.19" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[29b9bf4036036b28cde1f0225d581220]
+reverse link BaseComponent to ImageComponent--><path d="M1496.78,288.09 C1491.55,331.64 1485.28,383.86 1481.92,411.87 " fill="none" id="BaseComponent-backto-ImageComponent" style="stroke:#FFFFFF;stroke-width:1.0;"/><polygon fill="none" points="1489.84,287.21,1499.17,268.19,1503.74,288.88,1489.84,287.21" style="stroke:#FFFFFF;stroke-width:1.0;"/><!--MD5=[77b319dab9473c76bd1f577f7d2f064a]
+@startuml
+!define DARKORANGE
+!include https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+interface Draggable {
+    +onDragStart(event: DragEvent): void
+    +onDragEnd(event: DragEvent): void
+}
+interface Hoverable {
+    +onDragEnter(event: DragEvent): void
+    +onDragLeave(event: DragEvent): void
+}
+interface Droppable {
+    +onDragOver(event: DragEvent): void
+    +onDrop(event: DragEvent): void
+}
+interface Component {
+    +attachTo(parent: HTMLElement, position?: InsertPosition | undefined): void
+    +removeFrom(parent: HTMLElement): void
+    +attach(component: Component, position?: InsertPosition | undefined): void
+    +registerEventListener(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any): void
+}
+class BaseComponent<T extends HTMLElement> implements Component {
+    #element: T
+    +attachTo(parent: HTMLElement, position?: InsertPosition): void
+    +removeFrom(parent: HTMLElement): void
+    +attach(component: Component, position?: InsertPosition): void
+    +registerEventListener(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any): void
+}
+interface Composable {
+    +addChild(child: Component): void
+}
+
+
+interface SectionContainer extends Component, Composable, Draggable, Hoverable {
+    +setOnCloseListener(listener: OnCloseListener): void
+    +setOnDragStateListener(listener: OnDragStateListener<SectionContainer>): void
+    +muteChildren(state: "mute" | "unmute"): void
+    +getBoundingRect(): DOMRect
+    +onDropped(): void
+}
+
+class PageItemComponent extends BaseComponent implements SectionContainer, Draggable, Hoverable {
+    -closeListener?: OnCloseListener | undefined
+    -dragStateListener?: OnDragStateListener<PageItemComponent> | undefined
+    +onDragStart(_: DragEvent): void
+    +onDragEnd(_: DragEvent): void
+    +onDragEnter(_: DragEvent): void
+    +onDragLeave(_: DragEvent): void
+    +onDropped(): void
+    +notifyDragObservers(state: DragState): void
+    +addChild(child: Component): void
+    +setOnCloseListener(listener: OnCloseListener): void
+    +setOnDragStateListener(listener: OnDragStateListener<PageItemComponent>): void
+    +muteChildren(state: "mute" | "unmute"): void
+    +getBoundingRect(): DOMRect
+}
+class PageComponent extends BaseComponent implements Composable, Droppable {
+    -children: Set<SectionContainer>
+    -dragTarget?: SectionContainer | undefined
+    -dropTarget?: SectionContainer | undefined
+    -pageItemConstructor: SectionContainerConstructor
+    +onDragOver(_: DragEvent): void
+    +onDrop(event: DragEvent): void
+    +addChild(section: Component): void
+    -updateSections(state: "mute" | "unmute"): void
+}
+interface MediaData {
+    +title: string
+    +url: string
+}
+interface TextData {
+    +title: string
+    +body: string
+}
+class InputDialog extends BaseComponent implements Composable {
+    +closeListener?: OnCloseListener | undefined
+    +submitListener?: OnSubmitListener | undefined
+    +setOnCloseListenr(listener: OnCloseListener): void
+    +setOnSubmitListenr(listener: OnSubmitListener): void
+    +addChild(child: Component): void
+}
+class TextSectionInput extends BaseComponent implements TextData {
+    +title: string
+    +body: string
+}
+class MediaSectionInput extends BaseComponent implements MediaData {
+    +title: string
+    +url: string
+}
+class VideoComponent extends BaseComponent {
+    -convertToEmbeddedURL(url: string): string
+}
+class TodoComponent extends BaseComponent
+class NoteComponent extends BaseComponent
+class ImageComponent extends BaseComponent
+class App {
+    -page: Component & Composable
+    -dialogRoot: HTMLElement
+    -bindElementToDialog(selector: string, InputComponent: InputComponentConstructor<T>, makeSection: (input: T) => Component): void
+}
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam stereotypeCBackgroundColor BB6600
+
+
+
+skinparam backgroundColor 777
+
+
+
+
+
+
+
+skinparam circledCharacter {
+  radius 8
+  fontSize 11
+  fontName Verdana
+}
+
+skinparam class {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+
+  attributeFontColor aaa
+  attributeFontSize 11
+  attributeIconSize 11
+}
+
+
+skinparam actor {
+    backgroundColor BB6600
+  borderColor 662200
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam participant {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam collections {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam SequenceBox{
+    backgroundColor 575757
+  borderColor 767676
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam interface {
+    backgroundColor BB6600
+  borderColor 662200
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam component {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam node {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam database {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam queue {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam usecase {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam activity {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam sequence {
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+
+  lifeLineBorderColor BB6600
+  lifeLineBackgroundColor 575757
+}
+
+skinparam boundary {
+    backgroundColor BB6600
+  borderColor 662200
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam control {
+    backgroundColor BB6600
+  borderColor 662200
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam entity {
+    backgroundColor BB6600
+  borderColor 662200
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+skinparam state {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+  startColor BB6600
+  endColor 662200
+}
+
+
+skinparam object {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+
+skinparam note {
+    backgroundColor BB6600
+  borderColor 662200
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam cloud {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+    arrowColor fff
+  arrowFontName Verdana
+  arrowFontColor bbb
+  arrowFontSize 11
+}
+
+skinparam rectangle {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+skinparam storage {
+    backgroundColor 2e2e2e
+  borderColor 1b1b1b
+    fontColor fff
+  fontName Verdana
+  fontSize 11
+  stereotypeFontColor aaa
+  stereotypeFontSize 11
+}
+
+
+interface Draggable {
+    +onDragStart(event: DragEvent): void
+    +onDragEnd(event: DragEvent): void
+}
+interface Hoverable {
+    +onDragEnter(event: DragEvent): void
+    +onDragLeave(event: DragEvent): void
+}
+interface Droppable {
+    +onDragOver(event: DragEvent): void
+    +onDrop(event: DragEvent): void
+}
+interface Component {
+    +attachTo(parent: HTMLElement, position?: InsertPosition | undefined): void
+    +removeFrom(parent: HTMLElement): void
+    +attach(component: Component, position?: InsertPosition | undefined): void
+    +registerEventListener(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any): void
+}
+class BaseComponent<T extends HTMLElement> implements Component {
+    #element: T
+    +attachTo(parent: HTMLElement, position?: InsertPosition): void
+    +removeFrom(parent: HTMLElement): void
+    +attach(component: Component, position?: InsertPosition): void
+    +registerEventListener(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any): void
+}
+interface Composable {
+    +addChild(child: Component): void
+}
+
+
+interface SectionContainer extends Component, Composable, Draggable, Hoverable {
+    +setOnCloseListener(listener: OnCloseListener): void
+    +setOnDragStateListener(listener: OnDragStateListener<SectionContainer>): void
+    +muteChildren(state: "mute" | "unmute"): void
+    +getBoundingRect(): DOMRect
+    +onDropped(): void
+}
+
+class PageItemComponent extends BaseComponent implements SectionContainer, Draggable, Hoverable {
+    -closeListener?: OnCloseListener | undefined
+    -dragStateListener?: OnDragStateListener<PageItemComponent> | undefined
+    +onDragStart(_: DragEvent): void
+    +onDragEnd(_: DragEvent): void
+    +onDragEnter(_: DragEvent): void
+    +onDragLeave(_: DragEvent): void
+    +onDropped(): void
+    +notifyDragObservers(state: DragState): void
+    +addChild(child: Component): void
+    +setOnCloseListener(listener: OnCloseListener): void
+    +setOnDragStateListener(listener: OnDragStateListener<PageItemComponent>): void
+    +muteChildren(state: "mute" | "unmute"): void
+    +getBoundingRect(): DOMRect
+}
+class PageComponent extends BaseComponent implements Composable, Droppable {
+    -children: Set<SectionContainer>
+    -dragTarget?: SectionContainer | undefined
+    -dropTarget?: SectionContainer | undefined
+    -pageItemConstructor: SectionContainerConstructor
+    +onDragOver(_: DragEvent): void
+    +onDrop(event: DragEvent): void
+    +addChild(section: Component): void
+    -updateSections(state: "mute" | "unmute"): void
+}
+interface MediaData {
+    +title: string
+    +url: string
+}
+interface TextData {
+    +title: string
+    +body: string
+}
+class InputDialog extends BaseComponent implements Composable {
+    +closeListener?: OnCloseListener | undefined
+    +submitListener?: OnSubmitListener | undefined
+    +setOnCloseListenr(listener: OnCloseListener): void
+    +setOnSubmitListenr(listener: OnSubmitListener): void
+    +addChild(child: Component): void
+}
+class TextSectionInput extends BaseComponent implements TextData {
+    +title: string
+    +body: string
+}
+class MediaSectionInput extends BaseComponent implements MediaData {
+    +title: string
+    +url: string
+}
+class VideoComponent extends BaseComponent {
+    -convertToEmbeddedURL(url: string): string
+}
+class TodoComponent extends BaseComponent
+class NoteComponent extends BaseComponent
+class ImageComponent extends BaseComponent
+class App {
+    -page: Component & Composable
+    -dialogRoot: HTMLElement
+    -bindElementToDialog(selector: string, InputComponent: InputComponentConstructor<T>, makeSection: (input: T) => Component): void
+}
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 19:25:05 KST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: AU
+--></g></svg>
